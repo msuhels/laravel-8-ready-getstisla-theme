@@ -17,28 +17,34 @@ Route::get('/', function () {
     return view('index');
 });
 Route::get('/login', function () {
-    return view('login');
+    return view('auth.login');
 });
 Route::get('/login-2', function () {
-    return view('login-2');
+    return view('auth.login-2');
 });
 Route::get('/register', function () {
-    return view('register');
+    return view('auth.register');
+});
+Route::get('/auth-reset-password', function () {
+    return view('auth.auth-reset-password');
+});
+Route::get('/auth-forgot-password', function () {
+    return view('auth.auth-forgot-password');
 });
 Route::get('/general-dashboard', function () {
     return view('general-dashboard');
 });
 Route::get('/ecom-dashboard', function () {
-    return view('index');
+    return view('index-2');
 });
 Route::get('/layout-default', function () {
-    return view('layout-default');
+    return view('layouts.layout-default');
 });
 Route::get('/layout-transparent', function () {
-    return view('layout-transparent');
+    return view('layouts.layout-transparent');
 });
 Route::get('/layout-top-navigation', function () {
-    return view('layout-top-navigation');
+    return view('layouts.layout-top-navigation');
 });
 Route::get('/blank', function () {
     return view('blank');
@@ -159,6 +165,98 @@ Route::get('/forms-validation', function () {
 Route::get('/gmaps-advanced-route', function () {
     return view('google-maps.gmaps-advanced-route');
 });
+Route::get('/gmaps-draggable-marker', function () {
+    return view('google-maps.gmaps-draggable-marker');
+});
+Route::get('/gmaps-geocoding', function () {
+    return view('google-maps.gmaps-geocoding');
+});
+Route::get('/gmaps-geolocation', function () {
+    return view('google-maps.gmaps-geolocation');
+});
+Route::get('/gmaps-marker', function () {
+    return view('google-maps.gmaps-marker');
+});
+Route::get('/gmaps-multiple-marker', function () {
+    return view('google-maps.gmaps-multiple-marker');
+});
+Route::get('/gmaps-route', function () {
+    return view('google-maps.gmaps-route');
+});
+Route::get('/gmaps-simple', function () {
+    return view('modules.gmaps-simple');
+});
+
+Route::get('/modules-datatables', function () {
+    return view('modules.modules-datatables');
+});
+Route::get('/modules-flag', function () {
+    return view('modules.modules-flag');
+});
+Route::get('/modules-font-awesome', function () {
+    return view('modules.modules-font-awesome');
+});
+Route::get('/modules-ion-icons', function () {
+    return view('modules.modules-ion-icons');
+});
+Route::get('/modules-owl-carousel', function () {
+    return view('modules.modules-owl-carousel');
+});
+Route::get('/modules-sparkline', function () {
+    return view('modules.modules-sparkline');
+});
+Route::get('/modules-sweet-alert', function () {
+    return view('modules.modules-sweet-alert');
+});
+Route::get('/modules-toastr', function () {
+    return view('modules.modules-toastr');
+});
+Route::get('/modules-vector-map', function () {
+    return view('modules.modules-vector-map');
+});
+Route::get('/modules-weather-icon', function () {
+    return view('modules.modules-weather-icon');
+});
+
+Route::get('/features-activities', function () {
+    return view('features.features-activities');
+});
+Route::get('/features-post-create', function () {
+    return view('features.features-post-create');
+});
+Route::get('/features-posts', function () {
+    return view('features.features-posts');
+});
+Route::get('/features-profile', function () {
+    return view('features.features-profile');
+});
+
+Route::get('/features-settings', function () {
+    return view('features.features-settings');
+});
+
+Route::get('/features-setting-detail', function () {
+    return view('features.features-setting-detail');
+});
+
+Route::get('/features-tickets', function () {
+    return view('features.features-tickets');
+});
+
+
+Route::get('/utilities-contact', function () {
+    return view('utilities.utilities-contact');
+});
+
+Route::get('/utilities-invoice', function () {
+    return view('utilities.utilities-invoice');
+});
+
+Route::get('/utilities-subscribe', function () {
+    return view('utilities.utilities-subscribe');
+});
+
+
 Route::get('/credits', function () {
     return view('credits');
 });
